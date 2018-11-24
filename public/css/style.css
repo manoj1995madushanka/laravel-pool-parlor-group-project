@@ -1,0 +1,54 @@
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url("https://images.dazeinfo.com/wp-content/uploads/2016/10/Rise-of-Chinese-smartphone-brnads-in-india.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.top-nav-collapse {
+    background-color: #24355C;
+}
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #24355C;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #24355C;
+  }
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.logindiv{
+    border: 2px solid rgb(109, 153, 182);
+    border-radius: 12px;
+}
+
+.signupdiv{
+  border: 2px solid rgb(109, 153, 182);
+  border-radius: 12px;
+}
+
