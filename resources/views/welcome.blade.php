@@ -12,39 +12,21 @@
 
     <title>{{ config('app.name') }}</title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="{!! asset('css/bootstrap.min.css') !!}" media="all" rel="stylesheet" type="text/css" />
-    <!-- Material Design Bootstrap -->
-    <link href="{!! asset('css/mdb.min.css') !!}" media="all" rel="stylesheet" type="text/css" />
-    <!-- Your custom styles (optional) -->
-    <link href="{!! asset('css/style.css') !!}" media="all" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Bootstrap core CSS -->
+<link href="{!! asset('css/bootstrap.min.css') !!}" media="all" rel="stylesheet" type="text/css" />
+<!-- Material Design Bootstrap -->
+<link href="{!! asset('css/mdb.min.css') !!}" media="all" rel="stylesheet" type="text/css" />
+<!-- Your custom styles (optional) -->
+<link href="{!! asset('css/style.css') !!}" media="all" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
 
     @include('includes.navbar')
 
-    <button id="myBtn" class="btn btn-outline-dark scroll-top" title="Go to top"> <i class="fa fa-arrow-up"></i> </button>
-    <script>
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {scrollFunction()};
-            
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("myBtn").style.display = "block";
-                } else {
-                    document.getElementById("myBtn").style.display = "none";
-                }
-            }
-            
-            // When the user clicks on the button, scroll to the top of the document
-                $(".scroll-top").click(function() {
-                $('html,body').animate({
-                    scrollTop: $(".view").offset().top},
-                    'slow');
-                });
-            </script>
+    @include('includes.scrollBtn')
     <!--Main Navigation-->
     <header>
  
@@ -650,15 +632,16 @@
     <!--/.Footer--> 
 
 
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src= {!! asset('js/jquery-3.3.1.min.js') !!}></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src= {!! asset('js/popper.min.js') !!}></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src= {!! asset('js/bootstrap.min.js') !!}></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src= {!! asset('js/mdb.min.js') !!}></script>
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src= {!! asset('js/jquery-3.3.1.min.js') !!}></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src= {!! asset('js/popper.min.js') !!}></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src= {!! asset('js/bootstrap.min.js') !!}></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src= {!! asset('js/mdb.min.js') !!}></script>
+    
 
     <!--Google Maps-->
     <script src="https://maps.google.com/maps/api/js"></script>
