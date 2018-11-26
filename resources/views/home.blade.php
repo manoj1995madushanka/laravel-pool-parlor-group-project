@@ -1,4 +1,4 @@
-
+{{-- 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -929,7 +929,7 @@
     </script> 
 </body>
 
-</html>
+</html> --}}
 
 
 
@@ -953,9 +953,10 @@
 
 
 
-<!--
+
 @extends('layouts.app')
 
+@include('includes.scrollBtn')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -977,4 +978,3 @@
     </div>
 </div>
 @endsection
--->
