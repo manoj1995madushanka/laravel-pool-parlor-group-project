@@ -1,9 +1,6 @@
+<?php echo $__env->make('includes.scrollBtn', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php $__env->startSection('content'); ?>
 
-@extends('layouts.app')
-
-@include('includes.scrollBtn')
-@section('content')
-{{-- @include('includes.callander') --}}
     <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -23,8 +20,7 @@
                                     <button type="button" class="btn btn-success">BOOK</button>
                                 </form>
                                 
-                                {{-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> --}}
+                                
                             </div>
                         </div>
 
@@ -35,8 +31,7 @@
                                 <form action="">
                                     <button type="button" class="btn btn-success">BOOK</button>
                                 </form>
-                                {{-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> --}}
+                                
                             </div>
                         </div>
 
@@ -47,8 +42,7 @@
                                 <form action="">
                                     <button type="button" class="btn btn-success">BOOK</button>
                                 </form>
-                                {{-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> --}}
+                                
                             </div>
                         </div>
 
@@ -59,8 +53,7 @@
                                 <form action="">
                                     <button type="button" class="btn btn-success">BOOK</button>
                                 </form>
-                                {{-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> --}}
+                                
                             </div>
                         </div>
                         
@@ -74,4 +67,6 @@
 </div>
 
 
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
