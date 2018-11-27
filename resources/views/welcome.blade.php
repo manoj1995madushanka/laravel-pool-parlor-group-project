@@ -621,11 +621,7 @@
         </div>
         <!--/.Footer Links-->
 
-        <!--Copyright-->
-        <div class="footer-copyright py-3 text-center">
-            © 2018 Copyright:
-            <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com </a>
-        </div>
+        
         <!--/.Copyright-->
 
     </footer>

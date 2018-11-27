@@ -931,29 +931,6 @@
 
 </html> --}}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @extends('layouts.app')
 
 @include('includes.scrollBtn')
@@ -974,6 +951,190 @@
                     You are logged in!
                 </div>
             </div>
+            <div class="row">
+                        
+
+                    <!--Grid column-->
+                    <div class="col-md-5 signupdiv">
+                        <br>
+                        <h3 class="mb-5 font-weight-bold text-center">Table 3</h3>
+
+                        <div>
+
+                                <div class="view overlay z-depth-1-half">
+                                    <img src="/images/3.1.jpg" class="img-fluid" alt="">
+                                    <div class="mask rgba-white-slight"></div>
+                                </div>
+            
+                                 <h4 class="my-4 font-weight-bold">Deatails</h4>
+                                <p class="grey-text">me table eka gana monawa hari details damu</p>
+            
+                            </div>
+
+                        {{-- <form class="p-5" method="POST" action="{{ route('register') }}">
+                                @csrf
+                                
+                                
+                                <div class="md-form form-sm"> <i class="fa fa-user prefix grey-text"></i>
+                                    <input type="text" name="username" id="username" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }} form-control-sm" value="{{ old('username') }}" required>
+                                    <label for="username">Username</label>
+
+                                    @if ($errors->has('username'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('username') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+
+                                <div class="md-form form-sm"> <i class="fa fa-at prefix grey-text"></i>
+                                    <input type="email" name="email" id="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }} form-control-sm" value="{{ old('email') }}" required>
+                                    <label for="email">Your Email</label>
+
+                                    @if ($errors->has('email'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('email') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+
+                                <div class="md-form form-sm"> <i class="fa fa-user prefix grey-text"></i>
+                                    <input type="text" name="f_name" id="f_name" class="form-control{{ $errors->has('f_name') ? ' is-invalid' : '' }} form-control-sm" value="{{ old('f_name') }}" required>
+                                    <label for="f_name">First Name</label>
+
+                                    @if ($errors->has('f_name'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('f_name') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+
+                                <div class="md-form form-sm"> <i class="fa fa-user prefix grey-text"></i>
+                                    <input type="text" name="l_name" id="l_name" class="form-control{{ $errors->has('l_name') ? ' is-invalid' : '' }} form-control-sm" value="{{ old('l_name') }}" required>
+                                    <label for="l_name">Last Name</label>
+
+                                    @if ($errors->has('l_name'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('l_name') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+
+                                <div class="md-form form-sm"> <i class="fa fa-key prefix grey-text"></i>
+                                    <input type="password" name="password" id="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }} form-control-sm" required>
+                                    <label for="password">Password</label>
+
+                                    @if ($errors->has('password'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('password') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+
+                                <div class="md-form form-sm"> <i class="fa fa-key prefix grey-text"></i>
+                                    <input type="password" name="password_confirmation" id="password-confirm" class="form-control form-control-sm" required>
+                                    <label for="password-confirm">{{ __('Confirm Password') }}</label>
+                                </div>
+
+                                <div class="text-center mt-4">
+                                    <button type="submit" class="btn btn-primary">{{ __('Signup') }} <i class="fa fa-user-plus ml-1"></i></button>
+                                </div>  
+                                
+                        <!-- Form contact -->
+                    </form> --}}
+                    @include('includes.callander')
+                </div>
+                    <!--Grid column-->
+                     <div class="col-md-2"></div>
+
+                     
+                    <div class="col-md-5 signupdiv">
+                        <br>    
+                        <h3 class="mb-5 font-weight-bold text-center">Table 4</h3>
+
+                        <div>
+
+                            <div class="view overlay z-depth-1-half">
+                                <img src="/images/4.1.jpg" class="img-fluid" alt="">
+                                <div class="mask rgba-white-slight"></div>
+                            </div>
+            
+                            <h4 class="my-4 font-weight-bold">Deatails</h4>
+                            <p class="grey-text">me table eka gana monawa hari details damu</p>
+            
+                        </div>
+
+                            <form class="p-5" method="POST" action="{{ route('register') }}">
+                                    @csrf
+                                    
+                                    
+                                    <div class="md-form form-sm"> <i class="fa fa-user prefix grey-text"></i>
+                                        <input type="text" name="username" id="username" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }} form-control-sm" value="{{ old('username') }}" required>
+                                        <label for="username">Username</label>
+    
+                                        @if ($errors->has('username'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('username') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+
+                                    <div class="md-form form-sm"> <i class="fa fa-at prefix grey-text"></i>
+                                        <input type="email" name="email" id="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }} form-control-sm" value="{{ old('email') }}" required>
+                                        <label for="email">Your Email</label>
+    
+                                        @if ($errors->has('email'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('email') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+
+                                    <div class="md-form form-sm"> <i class="fa fa-user prefix grey-text"></i>
+                                        <input type="text" name="f_name" id="f_name" class="form-control{{ $errors->has('f_name') ? ' is-invalid' : '' }} form-control-sm" value="{{ old('f_name') }}" required>
+                                        <label for="f_name">First Name</label>
+    
+                                        @if ($errors->has('f_name'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('f_name') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+
+                                    <div class="md-form form-sm"> <i class="fa fa-user prefix grey-text"></i>
+                                        <input type="text" name="l_name" id="l_name" class="form-control{{ $errors->has('l_name') ? ' is-invalid' : '' }} form-control-sm" value="{{ old('l_name') }}" required>
+                                        <label for="l_name">Last Name</label>
+    
+                                        @if ($errors->has('l_name'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('l_name') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+    
+                                    <div class="md-form form-sm"> <i class="fa fa-key prefix grey-text"></i>
+                                        <input type="password" name="password" id="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }} form-control-sm" required>
+                                        <label for="password">Password</label>
+    
+                                        @if ($errors->has('password'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('password') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+    
+                                    <div class="md-form form-sm"> <i class="fa fa-key prefix grey-text"></i>
+                                        <input type="password" name="password_confirmation" id="password-confirm" class="form-control form-control-sm" required>
+                                        <label for="password-confirm">{{ __('Confirm Password') }}</label>
+                                    </div>
+    
+                                    <div class="text-center mt-4">
+                                        <button type="submit" class="btn btn-primary">{{ __('Signup') }} <i class="fa fa-user-plus ml-1"></i></button>
+                                    </div>  
+                                    
+                            <!-- Form contact -->
+                        </form>
+                    </div>
+                </div>
         </div>
     </div>
 </div>
