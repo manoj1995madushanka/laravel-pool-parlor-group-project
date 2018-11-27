@@ -7,26 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <link href="{!! asset('css/app.css') !!}" media="all" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="{!! asset('js/app.js') !!}"></script>
+    <link href="<?php echo asset('css/app.css'); ?>" media="all" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="<?php echo asset('js/app.js'); ?>"></script>
 
-    <title>{{ config('app.name') }}</title>
+    <title><?php echo e(config('app.name')); ?></title>
     <!-- Font Awesome -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Bootstrap core CSS -->
-<link href="{!! asset('css/bootstrap.min.css') !!}" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo asset('css/bootstrap.min.css'); ?>" media="all" rel="stylesheet" type="text/css" />
 <!-- Material Design Bootstrap -->
-<link href="{!! asset('css/mdb.min.css') !!}" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo asset('css/mdb.min.css'); ?>" media="all" rel="stylesheet" type="text/css" />
 <!-- Your custom styles (optional) -->
-<link href="{!! asset('css/style.css') !!}" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo asset('css/style.css'); ?>" media="all" rel="stylesheet" type="text/css" />
 
 </head>
 
 <body>
 
-    @include('includes.navbar')
+    <?php echo $__env->make('includes.navbar', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
-    @include('includes.scrollBtn')
+    <?php echo $__env->make('includes.scrollBtn', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
     <!--Main Navigation-->
     <header>
  
@@ -96,36 +96,37 @@
                     <div class="col-md-5 logindiv">
                         <h3 class="mb-5 font-weight-bold text-center">Log In</h3>
                         <!-- Form contact -->
-                            <form class="p-5" method="POST" action="{{ route('login') }}">
-                                @csrf
+                            <form class="p-5" method="POST" action="<?php echo e(route('login')); ?>">
+                                <?php echo csrf_field(); ?>
                                 
                                 <div class="md-form form-sm"> <i class="fa fa-at prefix grey-text"></i>
-                                    <input id="email" name="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }} form-control-sm" required>
+                                    <input id="email" name="email" type="email" class="form-control<?php echo e($errors->has('email') ? ' is-invalid' : ''); ?> form-control-sm" required>
                                     <label for="email">E Mail</label>
 
-                                    @if ($errors->has('email'))
+                                    <?php if($errors->has('email')): ?>
                                         <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('email') }}</strong>
+                                            <strong><?php echo e($errors->first('email')); ?></strong>
                                         </span>
-                                    @endif
+                                    <?php endif; ?>
                                 </div>
 
                                 <div class="md-form form-sm"> <i class="fa fa-key prefix grey-text"></i>
-                                    <input id="password" name="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }} form-control-sm" required>
+                                    <input id="password" name="password" type="password" class="form-control<?php echo e($errors->has('password') ? ' is-invalid' : ''); ?> form-control-sm" required>
                                     <label for="password">Password</label>
 
-                                    @if ($errors->has('password'))
+                                    <?php if($errors->has('password')): ?>
                                             <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $errors->first('password') }}</strong>
+                                                <strong><?php echo e($errors->first('password')); ?></strong>
                                             </span>
-                                        @endif
+                                        <?php endif; ?>
                                 </div>
 
                                 <div class="text-center mt-4">
-                                    <button type="submit" class="btn btn-primary">{{ __('Login') }} <i class="fa fa-sign-in-alt ml-1"></i></button>
+                                    <button type="submit" class="btn btn-primary"><?php echo e(__('Login')); ?> <i class="fa fa-sign-in-alt ml-1"></i></button>
 
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                    <a class="btn btn-link" href="<?php echo e(route('password.request')); ?>">
+                                        <?php echo e(__('Forgot Your Password?')); ?>
+
                                     </a>
                                 </div>
         
@@ -135,72 +136,72 @@
                      <div class="col-md-2"></div>
                     <div class="col-md-5 signupdiv">
                             <h3 class="mb-5 font-weight-bold text-center">Sign Up</h3>
-                            <form class="p-5" method="POST" action="{{ route('register') }}">
-                                    @csrf
+                            <form class="p-5" method="POST" action="<?php echo e(route('register')); ?>">
+                                    <?php echo csrf_field(); ?>
                                     
                                     
                                     <div class="md-form form-sm"> <i class="fa fa-user prefix grey-text"></i>
-                                        <input type="text" name="username" id="username" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }} form-control-sm" value="{{ old('username') }}" required>
+                                        <input type="text" name="username" id="username" class="form-control<?php echo e($errors->has('username') ? ' is-invalid' : ''); ?> form-control-sm" value="<?php echo e(old('username')); ?>" required>
                                         <label for="username">Username</label>
     
-                                        @if ($errors->has('username'))
+                                        <?php if($errors->has('username')): ?>
                                             <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $errors->first('username') }}</strong>
+                                                <strong><?php echo e($errors->first('username')); ?></strong>
                                             </span>
-                                        @endif
+                                        <?php endif; ?>
                                     </div>
 
                                     <div class="md-form form-sm"> <i class="fa fa-at prefix grey-text"></i>
-                                        <input type="email" name="email" id="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }} form-control-sm" value="{{ old('email') }}" required>
+                                        <input type="email" name="email" id="email" class="form-control<?php echo e($errors->has('email') ? ' is-invalid' : ''); ?> form-control-sm" value="<?php echo e(old('email')); ?>" required>
                                         <label for="email">Your Email</label>
     
-                                        @if ($errors->has('email'))
+                                        <?php if($errors->has('email')): ?>
                                             <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $errors->first('email') }}</strong>
+                                                <strong><?php echo e($errors->first('email')); ?></strong>
                                             </span>
-                                        @endif
+                                        <?php endif; ?>
                                     </div>
 
                                     <div class="md-form form-sm"> <i class="fa fa-user prefix grey-text"></i>
-                                        <input type="text" name="f_name" id="f_name" class="form-control{{ $errors->has('f_name') ? ' is-invalid' : '' }} form-control-sm" value="{{ old('f_name') }}" required>
+                                        <input type="text" name="f_name" id="f_name" class="form-control<?php echo e($errors->has('f_name') ? ' is-invalid' : ''); ?> form-control-sm" value="<?php echo e(old('f_name')); ?>" required>
                                         <label for="f_name">First Name</label>
     
-                                        @if ($errors->has('f_name'))
+                                        <?php if($errors->has('f_name')): ?>
                                             <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $errors->first('f_name') }}</strong>
+                                                <strong><?php echo e($errors->first('f_name')); ?></strong>
                                             </span>
-                                        @endif
+                                        <?php endif; ?>
                                     </div>
 
                                     <div class="md-form form-sm"> <i class="fa fa-user prefix grey-text"></i>
-                                        <input type="text" name="l_name" id="l_name" class="form-control{{ $errors->has('l_name') ? ' is-invalid' : '' }} form-control-sm" value="{{ old('l_name') }}" required>
+                                        <input type="text" name="l_name" id="l_name" class="form-control<?php echo e($errors->has('l_name') ? ' is-invalid' : ''); ?> form-control-sm" value="<?php echo e(old('l_name')); ?>" required>
                                         <label for="l_name">Last Name</label>
     
-                                        @if ($errors->has('l_name'))
+                                        <?php if($errors->has('l_name')): ?>
                                             <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $errors->first('l_name') }}</strong>
+                                                <strong><?php echo e($errors->first('l_name')); ?></strong>
                                             </span>
-                                        @endif
+                                        <?php endif; ?>
                                     </div>
     
                                     <div class="md-form form-sm"> <i class="fa fa-key prefix grey-text"></i>
-                                        <input type="password" name="password" id="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }} form-control-sm" required>
+                                        <input type="password" name="password" id="password" class="form-control<?php echo e($errors->has('password') ? ' is-invalid' : ''); ?> form-control-sm" required>
                                         <label for="password">Password</label>
     
-                                        @if ($errors->has('password'))
+                                        <?php if($errors->has('password')): ?>
                                             <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $errors->first('password') }}</strong>
+                                                <strong><?php echo e($errors->first('password')); ?></strong>
                                             </span>
-                                        @endif
+                                        <?php endif; ?>
                                     </div>
     
                                     <div class="md-form form-sm"> <i class="fa fa-key prefix grey-text"></i>
                                         <input type="password" name="password_confirmation" id="password-confirm" class="form-control form-control-sm" required>
-                                        <label for="password-confirm">{{ __('Confirm Password') }}</label>
+                                        <label for="password-confirm"><?php echo e(__('Confirm Password')); ?></label>
                                     </div>
     
                                     <div class="text-center mt-4">
-                                        <button type="submit" class="btn btn-primary">{{ __('Signup') }} <i class="fa fa-user-plus ml-1"></i></button>
+                                        <button type="submit" class="btn btn-primary"><?php echo e(__('Signup')); ?> <i class="fa fa-user-plus ml-1"></i></button>
                                     </div>  
                                     
                             <!-- Form contact -->
@@ -289,116 +290,7 @@
 
 
 
-            {{-- <!--Section: Examples-->
-            <section id="examples" class="text-center">
-<br><br><br><br>
-                <!-- Heading -->
-                <h2 class="mb-5 font-weight-bold">Stunning Examples</h2>
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-12 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/29.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-12 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/10.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/11.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/13.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-            </section>
-            <!--Section: Examples--> --}}
+            
 
 
 
@@ -669,13 +561,13 @@
 
 <!-- SCRIPTS -->
 <!-- JQuery -->
-<script type="text/javascript" src= {!! asset('js/jquery-3.3.1.min.js') !!}></script>
+<script type="text/javascript" src= <?php echo asset('js/jquery-3.3.1.min.js'); ?>></script>
 <!-- Bootstrap tooltips -->
-<script type="text/javascript" src= {!! asset('js/popper.min.js') !!}></script>
+<script type="text/javascript" src= <?php echo asset('js/popper.min.js'); ?>></script>
 <!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src= {!! asset('js/bootstrap.min.js') !!}></script>
+<script type="text/javascript" src= <?php echo asset('js/bootstrap.min.js'); ?>></script>
 <!-- MDB core JavaScript -->
-<script type="text/javascript" src= {!! asset('js/mdb.min.js') !!}></script>
+<script type="text/javascript" src= <?php echo asset('js/mdb.min.js'); ?>></script>
     
 
     <!--Google Maps-->
