@@ -3,7 +3,7 @@
         <div class="container">
 
             <!-- Navbar brand -->
-            <a class="navbar-brand" href="#">Navbar</a>
+            {{-- <a class="navbar-brand" href="#">S T R I P E S</a> --}}
 
             <!-- Collapse button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
@@ -15,19 +15,25 @@
             <div class="collapse navbar-collapse" id="basicExampleNav">
 
                 <!-- Links -->
-                <ul class="navbar-nav mr-auto smooth-scroll">
+                {{-- <ul class="navbar-nav mr-auto smooth-scroll">
                     <li class="nav-item">
                         <a class="nav-link" href="#intro">Home</a>
                     </li>
-                </ul>
+                </ul> --}}
 
                 <ul class="navbar-nav ml-auto smooth-scroll">
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="#best-features">Features</a>
+                    </li> --}}
+                    <li class="nav-item">
+                            <a class="nav-link" href="#gallery">About Us</a>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactUs">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#examples">Sign Up</a>
-                    </li>
+                            <a class="nav-link" href="#join">Sign Up</a>
+                        </li>
                 </ul>
                 <!-- Links -->
 
