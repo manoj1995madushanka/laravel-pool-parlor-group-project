@@ -23,10 +23,21 @@ Route::get('/admin', function () {
     return view('admin');
 });
 
+Route::get('/adminLogin', function () {
+    return view('auth.adminLogin');
+});
+
+// Route::get('/adminRegister', function () {
+//     return view('auth.adminLogin');
+// });
+
+Route::get('/adminLogout', function () {
+    return view('auth.adminLogin');
+});
+
 Auth::routes();
 
-
-//Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/pool_admin', 'AdminController@Login');
 
 Route::get('/table1', 'TableshowController@tab1');
 Route::get('/table2', 'TableshowController@tab2');
@@ -41,4 +52,8 @@ Route::post('/table4/booking', 'ReservationController@tab4');
 Route::post('/message', 'MsgController@store');
 
 Route::get('/msg', 'MsgController@index');
+
+Route::get('/mybookings', 'ReservationController@index');
+
+Route::get('/allBookings', 'ReservationController@show');
 

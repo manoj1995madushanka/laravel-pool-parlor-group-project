@@ -40,13 +40,10 @@
                 <!-- Social Icon  -->
                  <ul class="navbar-nav nav-flex-icons">
                     <li class="nav-item">
-                        <a class="nav-link"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/TheStripesPool/" class="nav-link"><i class="fa fa-facebook"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/stripespool/" class="nav-link"><i class="fa fa-instagram"></i></a>
                     </li>
                 </ul> 
 
