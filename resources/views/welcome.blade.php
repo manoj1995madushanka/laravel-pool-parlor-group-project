@@ -213,7 +213,7 @@
             <!--Section: Join-->
 <br><br><br><br><br><br><br>
             <!--Section: Best Features-->
-            <section id="best-features" class="text-center">
+            {{-- <section id="best-features" class="text-center">
                 <br><br><br><br>
                 <!-- Heading -->
                 <h2 class="mb-5 font-weight-bold">Features of C H A T T E R</h2>
@@ -282,158 +282,11 @@
                 </div>
                 <!--Grid row-->
 
-            </section>
+            </section> --}}
             <!--Section: Best Features-->
 
             <hr class="my-5">
 
-
-
-            {{-- <!--Section: Examples-->
-            <section id="examples" class="text-center">
-<br><br><br><br>
-                <!-- Heading -->
-                <h2 class="mb-5 font-weight-bold">Stunning Examples</h2>
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-12 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/29.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-12 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/10.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/11.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/13.jpg" class="img-fluid" alt="">
-                            <div class="mask rgba-white-slight"></div>
-                        </div>
-
-                        <h4 class="my-4 font-weight-bold">Heading</h4>
-                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-                            assumenda deleniti hic.</p>
-
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-            </section>
-            <!--Section: Examples--> --}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <hr class="my-5">
 
             <!--Section: Gallery-->
             <section id="gallery">
@@ -525,6 +378,58 @@
 
             </section>
             <!--Section: Gallery-->
+
+            <hr class="my-5">
+
+            <section id="contactUs">
+
+                    <h2 class="mb-5 font-weight-bold text-center">Contact US</h2>
+
+                    {{-- <form class="p-5" method="POST" action="/message"> --}}
+                    {!! Form::open(['url' => '/message', 'method'=>'POST', 'enctype'=>'multipart/form-data']) !!}      
+                            <div class="md-form form-sm"> <i class="fa fa-user prefix grey-text"></i>
+                                <input type="text" name="name" id="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }} form-control-sm" value="{{ old('name') }}" required>
+                                <label for="name">Name</label>
+
+                                @if ($errors->has('name'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+
+                            <div class="md-form form-sm"> <i class="fa fa-at prefix grey-text"></i>
+                                <input type="email" name="email" id="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }} form-control-sm" value="{{ old('email') }}" required>
+                                <label for="email">Your Email</label>
+
+                                @if ($errors->has('email'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+
+                            <div class="md-form form-sm"> <i class="fa fa-key prefix grey-text"></i>
+                                <input type="text" name="msg" id="msg" class="form-control{{ $errors->has('msg') ? ' is-invalid' : '' }} form-control-sm" required>
+                                <label for="msg">Message</label>
+
+                                @if ($errors->has('msg'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('msg') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+
+
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn btn-primary">{{ __('Submit') }} <i class="fa fa-user-plus ml-1"></i></button>
+                            </div>  
+                            
+                    <!-- Form contact -->
+                    {!! Form::close() !!}
+                    
+    
+            </section>
 
             <hr class="my-5">
 
