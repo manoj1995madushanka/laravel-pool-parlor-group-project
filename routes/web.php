@@ -46,3 +46,8 @@ Route::get('/table4', function () {
 Route::post('/table1/booking', 'ReservationController@tab1');
 
 Route::get('/table1', 'TableshowController@tab1');
+
+
+Route::get('/my_bookings', function () {
+    return view('my_bookings');
+});

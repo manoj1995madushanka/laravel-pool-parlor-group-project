@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="text-center">
-        <h1>Boot Table 1</h1>
+        <h1>Book Table 1</h1>
     </div><br>
 
     <div class="formcstm">           
