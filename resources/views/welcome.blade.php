@@ -55,6 +55,10 @@
                                 Join Us
                                 <i class="fa fa-user-plus ml-2"></i> 
                             </button>
+                            <button type="button" class="btn btn-outline-white scroll-join">
+                                    Log In
+                                    <i class="fa fa-share-square ml-2"></i> 
+                                </button>
                             
 
                             <script>
@@ -212,78 +216,7 @@
             </section>
             <!--Section: Join-->
 <br><br><br><br><br><br><br>
-            <!--Section: Best Features-->
-            {{-- <section id="best-features" class="text-center">
-                <br><br><br><br>
-                <!-- Heading -->
-                <h2 class="mb-5 font-weight-bold">Features of C H A T T E R</h2>
-
-                <!--Grid row-->
-                <div class="row d-flex justify-content-center mb-4">
-
-                    <!--Grid column-->
-                    <div class="col-md-8">
-
-                        <!-- Description -->
-                        
-
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-5">
-                        <i class="fa fa-lock fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Security</h4>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-1">
-                        <i class="fa fa-users fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">User Friendly</h4>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-1">
-                        <i class="fa fa-share-square fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Easy Document Sharing</h4>
-                    </div>
-                    <!--Grid column-->
-                </div>
-<br><br><br><br>
-                <div class="row">
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-5">
-                        <i class="fa fa-comment fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Reliable Messaging</h4>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-1">
-                        <i class="fa fa-phone fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Free and Clear Voice Chat</h4>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-1">
-                        <i class="fa fa-tachometer fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Low Data Usage</h4>
-                    </div>
-                    <!--Grid column-->
-                </div>
-                <!--Grid row-->
-
-            </section> --}}
-            <!--Section: Best Features-->
+            
 
             <hr class="my-5">
 
