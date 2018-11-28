@@ -42,7 +42,7 @@
                         <div class="col-ml-8">
 
                             <!-- Heading -->
-                            <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">මේකට නමක් දාපන්</h2>
+                            <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">S T R I P E S</h2>
 
                             <!-- Divider -->
                             <hr class="hr-light">
