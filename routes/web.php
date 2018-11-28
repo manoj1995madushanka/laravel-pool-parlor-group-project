@@ -25,24 +25,20 @@ Route::get('/admin', function () {
 
 Auth::routes();
 
+
 //Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/table1', function () {
-    return view('table1');
-});
-
-Route::get('/table2', function () {
-    return view('table2');
-});
-
-Route::get('/table3', function () {
-    return view('table3');
-});
-
-Route::get('/table4', function () {
-    return view('table4');
-});
+Route::get('/table1', 'TableshowController@tab1');
+Route::get('/table2', 'TableshowController@tab2');
+Route::get('/table3', 'TableshowController@tab3');
+Route::get('/table4', 'TableshowController@tab4');
 
 Route::post('/table1/booking', 'ReservationController@tab1');
+Route::post('/table2/booking', 'ReservationController@tab2');
+Route::post('/table3/booking', 'ReservationController@tab3');
+Route::post('/table4/booking', 'ReservationController@tab4');
 
-Route::get('/table1', 'TableshowController@tab1');
+Route::post('/message', 'MsgController@store');
+
+Route::get('/msg', 'MsgController@index');
+
