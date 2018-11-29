@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'S T R I P E S') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -31,12 +31,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item ">
           <a class="nav-link" href="/msg">Message <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Table</a>
+        <li class="nav-item ">
+            <a class="nav-link" href="/allBookings">Bookings <span class="sr-only">(current)</span></a>
         </li>
+        
         {{-- <li class="nav-item">
           <a class="nav-link" href="#">Pricing</a>
         </li>
@@ -45,21 +46,12 @@
         </li> --}}
 
         <!-- Right Side Of Navbar -->
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav mr-auto">
             <!-- Authentication Links -->
-            @guest
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                </li>
-                <li class="nav-item">
-                    @if (Route::has('register'))
-                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                    @endif
-                </li>
-            @else
+            
                 <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        {{ Auth::user()->username }} <span class="caret"></span>
+                        venom <span class="caret"></span>
                 </a>
 
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -74,7 +66,6 @@
                         </form>
                     </div>
                 </li>
-            @endguest
         </ul>
 
       </ul>
