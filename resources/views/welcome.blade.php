@@ -55,6 +55,10 @@
                                 Join Us
                                 <i class="fa fa-user-plus ml-2"></i> 
                             </button>
+                            <button type="button" class="btn btn-outline-white scroll-join">
+                                    Log In
+                                    <i class="fa fa-share-square ml-2"></i> 
+                                </button>
                             
 
                             <script>
@@ -212,78 +216,7 @@
             </section>
             <!--Section: Join-->
 <br><br><br><br><br><br><br>
-            <!--Section: Best Features-->
-            {{-- <section id="best-features" class="text-center">
-                <br><br><br><br>
-                <!-- Heading -->
-                <h2 class="mb-5 font-weight-bold">Features of C H A T T E R</h2>
-
-                <!--Grid row-->
-                <div class="row d-flex justify-content-center mb-4">
-
-                    <!--Grid column-->
-                    <div class="col-md-8">
-
-                        <!-- Description -->
-                        
-
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-5">
-                        <i class="fa fa-lock fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Security</h4>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-1">
-                        <i class="fa fa-users fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">User Friendly</h4>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-1">
-                        <i class="fa fa-share-square fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Easy Document Sharing</h4>
-                    </div>
-                    <!--Grid column-->
-                </div>
-<br><br><br><br>
-                <div class="row">
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-5">
-                        <i class="fa fa-comment fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Reliable Messaging</h4>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-1">
-                        <i class="fa fa-phone fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Free and Clear Voice Chat</h4>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-1">
-                        <i class="fa fa-tachometer fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Low Data Usage</h4>
-                    </div>
-                    <!--Grid column-->
-                </div>
-                <!--Grid row-->
-
-            </section> --}}
-            <!--Section: Best Features-->
+            
 
             <hr class="my-5">
 
@@ -348,27 +281,13 @@
                     <div class="col-md-6">
 
                         <!--Excerpt-->
-                        <a href="" class="teal-text">
-                            <h6 class="pb-1">
-                                <i class="fa fa-heart"></i>
-                                <strong> Lifestyle </strong>
-                            </h6>
-                        </a>
+                        
                         <h4 class="mb-3">
-                            <strong>This is title of the news</strong>
+                            <strong>The Stripes</strong>
                         </h4>
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis
-                            debitis aut rerum.</p>
+                        <p>A Pool Parlor with Friendly, Happening, Musical,Fun filled and a laid back Atmosphere.
+                             A place to Chill. Have a break and to Hang out with Your Mates.</p>
 
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis
-                            debitis aut rerum.</p>
-                        <p>by
-                            <a>
-                                <strong>Jessica Clark</strong>
-                            </a>, 26/08/2016</p>
-                        <a class="btn btn-primary btn-md">Read more</a>
 
                     </div>
                     <!--Grid column-->
@@ -482,84 +401,6 @@
             </div>
         </div>
         <!-- Social buttons -->
-
-        <!--Footer Links-->
-        <div class="container mt-5 mb-4 text-center text-md-left">
-            <div class="row mt-3">
-
-                <!--First column-->
-                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong>Company name</strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit
-                        amet, consectetur adipisicing elit.</p>
-                </div>
-                <!--/.First column-->
-
-                <!--Second column-->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong>Products</strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a href="#!">MDBootstrap</a>
-                    </p>
-                    <p>
-                        <a href="#!">MDWordPress</a>
-                    </p>
-                    <p>
-                        <a href="#!">BrandFlow</a>
-                    </p>
-                    <p>
-                        <a href="#!">Bootstrap Angular</a>
-                    </p>
-                </div>
-                <!--/.Second column-->
-
-                <!--Third column-->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong>Useful links</strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a href="#!">Your Account</a>
-                    </p>
-                    <p>
-                        <a href="#!">Become an Affiliate</a>
-                    </p>
-                    <p>
-                        <a href="#!">Shipping Rates</a>
-                    </p>
-                    <p>
-                        <a href="#!">Help</a>
-                    </p>
-                </div>
-                <!--/.Third column-->
-
-                <!--Fourth column-->
-                <div class="col-md-4 col-lg-3 col-xl-3">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong>Contact</strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
-                    <p>
-                        <i class="fa fa-envelope mr-3"></i> info@example.com</p>
-                    <p>
-                        <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
-                    <p>
-                        <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
-                </div>
-                <!--/.Fourth column-->
-
-            </div>
-        </div>
-        <!--/.Footer Links-->
 
         
         <!--/.Copyright-->
